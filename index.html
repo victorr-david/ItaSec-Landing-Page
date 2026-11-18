@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ItaSec | Segurança para sua casa e empresa na Paraíba</title>
+<meta name="description" content="A ItaSec cuida da segurança da sua casa ou empresa na Paraíba. Agende seu serviço pelo WhatsApp ou formulário.">
+<meta property="og:title" content="ItaSec | Segurança na Paraíba">
+<meta property="og:description" content="Agende seu serviço de segurança com a ItaSec.">
+<meta property="og:type" content="website">
+<!-- Após o deploy, trocar pelo endereço completo: https://SEU-DOMINIO/assets/logo-completa.jpg -->
+<meta property="og:image" content="assets/logo-completa.jpg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icone-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Montserrat:wght@300;800&display=swap" rel="stylesheet">
+
+<!-- RASTREAMENTO (ativar quando houver anúncios) -->
+<!-- Google Analytics: cole aqui o script gtag com o ID G-XXXXXXXXXX -->
+<!-- Meta Pixel: cole aqui o código do pixel -->
+
+<script>
+(function(){var t;try{t=localStorage.getItem('tema')}catch(e){}
+if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+document.documentElement.dataset.theme=t})();
+</script>
+<style>
+:root{
+  /* cores da marca: usadas apenas em detalhes */
+  --ciano:#0db3ec; --azul:#0171BA; --marinho:#1F428E;
+  --fundo:#ffffff; --suave:#f4f6f8; --texto:#101828; --muda:#566174; --linha:#e1e6ec;
+  --acento:#0171BA; --btn:#0171BA; --btn-hover:#015f9c; --btn-texto:#ffffff;
+  --raio:10px; color-scheme:light;
+}
+[data-theme="dark"]{
+  --fundo:#0c0f14; --suave:#12161d; --texto:#eef2f6; --muda:#9aa6b8; --linha:#242b36;
+  --acento:#0db3ec; --btn:#0db3ec; --btn-hover:#38c4f5; --btn-texto:#04223a;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--texto);background:var(--fundo);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ciano);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;margin-bottom:12px}
+.lead{color:var(--muda);max-width:60ch}
+
+/* botões */
+.btn{display:inline-block;padding:14px 26px;border-radius:var(--raio);font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font:inherit;font-weight:700}
+.btn-primario{background:var(--btn);color:var(--btn-texto)}
+.btn-primario:hover{background:var(--btn-hover)}
+.btn-contorno{border-color:var(--linha);color:var(--texto)}
+.btn-contorno:hover{border-color:var(--ciano)}
+.lead a{color:var(--acento)}
+
+/* topo */
+header.topo{background:var(--fundo);color:var(--texto);border-bottom:1px solid var(--linha);position:sticky;top:0;z-index:20}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{text-decoration:none;display:inline-flex;align-items:center;gap:10px;color:var(--texto)}
+.logo img{height:38px;width:auto}
+.marca{font-family:'Montserrat','Manrope',system-ui,sans-serif;font-weight:300;font-size:1.35rem;letter-spacing:.02em;line-height:1}
+.marca b{font-weight:800}
+footer .logo{margin-bottom:14px}
+footer .logo img{height:56px}
+footer .marca{font-size:1.7rem}
+.topo nav{display:flex;gap:22px;font-size:.95rem}
+.topo nav a{text-decoration:none;opacity:.85}
+.topo nav a:hover{opacity:1;color:var(--acento)}
+.tema{background:none;border:1px solid var(--linha);color:var(--texto);width:40px;height:40px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.tema:hover{border-color:var(--ciano)}
+.tema svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tema .sol{display:none}
+[data-theme="dark"] .tema .sol{display:block}
+[data-theme="dark"] .tema .lua{display:none}
+@media(max-width:720px){.topo nav{display:none}}
+
+/* hero */
+.hero{background:var(--suave);padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,6vw,3.6rem);font-weight:800}
+.hero h1::after{content:"";display:block;width:96px;height:6px;margin-top:22px;border-radius:3px;background:linear-gradient(90deg,var(--ciano) 0 33%,var(--azul) 33% 66%,var(--marinho) 66%)}
+.hero p{margin:20px 0 32px;color:var(--muda);font-size:1.1rem;max-width:46ch}
+.hero .acoes{display:flex;flex-wrap:wrap;gap:12px}
+.hero .selo{margin-top:28px;font-size:.9rem;color:var(--muda)}
+.hero .foto-hero{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--raio);border:1px solid var(--linha)}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero .foto-hero{aspect-ratio:1/1;object-position:center 100%}}
+
+/* sobre */
+.sobre .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.sobre .foto{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:var(--raio);border:1px solid var(--linha)}
+.sobre p+p{margin-top:14px}
+.valores{list-style:none;padding:0;margin-top:22px;display:grid;gap:10px}
+.valores li{padding-left:28px;position:relative}
+.valores li::before{content:"";position:absolute;left:0;top:.45em;width:14px;height:8px;border-left:3px solid var(--ciano);border-bottom:3px solid var(--ciano);transform:rotate(-45deg)}
+@media(max-width:820px){.sobre .wrap{grid-template-columns:1fr}}
+
+/* galeria */
+.galeria{background:var(--suave)}
+.grade{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
+.grade figure{grid-column:span 1;overflow:hidden;border-radius:var(--raio);border:1px solid var(--linha);background:var(--fundo)}
+.grade figure:nth-child(n+3){grid-column:span 2}
+.grade img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.grade figure:nth-child(3) img{aspect-ratio:1/1}
+.grade figure:nth-child(n+4) img{aspect-ratio:4/3}
+@media(min-width:820px){
+  .grade{grid-template-columns:repeat(6,1fr)}
+  .grade figure:nth-child(-n+3){grid-column:span 2}
+  .grade figure:nth-child(n+4){grid-column:span 3}
+  .grade figure:nth-child(3) img{aspect-ratio:3/4}
+}
+
+/* faq */
+.faq details{border-bottom:1px solid var(--linha);padding:18px 0}
+.faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--acento)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin-top:10px;color:var(--muda);max-width:65ch}
+.faq .lista{margin-top:28px;max-width:760px}
+
+/* contato */
+.contato{background:var(--suave)}
+.contato .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contato form{display:grid;gap:14px}
+.contato label{font-weight:700;font-size:.92rem;display:grid;gap:6px}
+.contato input,.contato select,.contato textarea{font:inherit;padding:12px 14px;border-radius:8px;border:1px solid var(--linha);background:var(--fundo);color:var(--texto);width:100%}
+.contato input:focus,.contato select:focus,.contato textarea:focus{border-color:var(--azul)}
+.contato textarea{min-height:110px;resize:vertical}
+.check{display:flex!important;grid-template-columns:none;align-items:flex-start;gap:10px;font-weight:400!important;font-size:.88rem!important;color:var(--muda)}
+.check input{width:auto;margin-top:4px}
+.check a{color:var(--acento)}
+.hp{position:absolute;left:-9999px}
+@media(max-width:820px){.contato .wrap{grid-template-columns:1fr}}
+
+/* rodapé */
+footer{background:var(--fundo);color:var(--muda);border-top:1px solid var(--linha);padding:48px 0 96px;font-size:.95rem}
+footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px}
+footer h3{color:var(--texto);font-size:1rem;margin-bottom:10px}
+footer a{text-decoration:none;border-bottom:1px solid var(--azul)}
+.copy{grid-column:1/-1;border-top:1px solid var(--linha);padding-top:20px;font-size:.85rem}
+
+/* WhatsApp flutuante */
+.zap{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:56px;padding:0 22px 0 18px;background:#25d366;color:#fff;font-weight:800;font-size:1rem;text-decoration:none;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.22);transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
+.zap:hover{background:#1ebe5b;transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.28)}
+.zap:focus-visible{outline-color:var(--texto)}
+.zap svg{width:28px;height:28px;flex:none;fill:currentColor}
+.zap span{text-shadow:0 1px 1px rgba(0,0,0,.18)}
+@media(max-width:480px){.zap{width:56px;padding:0}.zap span{display:none}}
+@media(prefers-reduced-motion:reduce){.zap{transition:none}.zap:hover{transform:none}}
+
+/* política de privacidade */
+dialog{max-width:560px;width:calc(100% - 32px);border:0;border-radius:var(--raio);padding:28px;background:var(--fundo);color:var(--texto)}
+dialog::backdrop{background:rgba(5,12,30,.6)}
+dialog h2{font-size:1.4rem}
+dialog p{margin:10px 0;color:var(--muda);font-size:.95rem}
+dialog button{margin-top:12px}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="logo" href="#topo" aria-label="ItaSec - início">
+      <img src="assets/escudo.png" alt="" width="36" height="38">
+      <span class="marca">ITA<b>SEC</b></span>
+    </a>
+    <nav aria-label="Principal">
+      <a href="#sobre">Quem somos</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#contato">Agendar</a>
+    </nav>
+    <button class="tema" id="tema" type="button" aria-label="Alternar entre tema claro e escuro">
+      <svg class="lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.800Z"/></svg>
+      <svg class="sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M2 12h2M20 12h2M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- 1. TOPO / HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Mais segurança para quem você ama e para o que é seu.</h1>
+        <p>A ItaSec protege casas e empresas em toda a Paraíba. Agende seu serviço em poucos minutos.</p>
+        <div class="acoes">
+          <a class="btn btn-primario" href="https://wa.me/5511948900813?text=Ol%C3%A1%2C%20quero%20agendar%20um%20servi%C3%A7o%20com%20a%20ItaSec." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+          <a class="btn btn-contorno" href="#contato">Enviar mensagem</a>
+        </div>
+        <p class="selo">Atendimento em todo Nordeste</p>
+      </div>
+      <img class="foto-hero" src="assets/hero.jpeg" alt="Fachada da sede da ItaSec, com o logo na parede e o carro da empresa em frente" width="900" height="1125" fetchpriority="high">
+    </div>
+  </section>
+
+  <!-- 2. SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="wrap">
+      <img class="foto" src="assets/fundador.jpeg" alt="Fundador da ItaSec, de camisa azul com o logo da empresa, sentado à mesa com notebook" width="900" height="900" loading="lazy">
+      <div>
+        <h2>Quem somos</h2>
+        <p class="lead">A ItaSec aparece como uma solução em segurança eletrônica e cabeamento estruturado, com 7 anos no mercado temos a experiência que você precisa.</p>
+        <p class="lead">Fundada em 2019 na Paraíba, contamos com uma equipe preparada para atender toda a região nordestina.</p>
+        <ul class="valores">
+          <li>Equipe competente</li>
+          <li>Atenção aos detalhes </li>
+          <li>Atendimento personalizado</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. GALERIA -->
+  <section class="galeria" id="galeria">
+    <div class="wrap">
+      <h2>Nosso trabalho</h2>
+      <p class="lead">Câmeras, monitoramento e rede instalados pela nossa equipe.</p>
+      <div class="grade">
+        <figure><img src="assets/galeria-1.jpeg" alt="Câmera de segurança instalada no muro de uma residência, com sensores de alarme ao lado" width="800" height="1067" loading="lazy"></figure>
+        <figure><img src="assets/galeria-2.jpeg" alt="Técnico da ItaSec em uma escada passando cabeamento no alto de uma construção" width="800" height="1067" loading="lazy"></figure>
+        <figure><img src="assets/galeria-3.jpeg" alt="Rack de rede organizado com patch panel, switch e gravador de vídeo" width="800" height="1067" loading="lazy"></figure>
+        <figure><img src="assets/galeria-4.jpeg" alt="Equipe da ItaSec instalando câmera de segurança no teto de um prédio" width="1000" height="750" loading="lazy"></figure>
+        <figure><img src="assets/galeria-5.jpeg" alt="Central de monitoramento com várias câmeras ao vivo na tela" width="1000" height="750" loading="lazy"></figure>
+        <figure><img src="assets/galeria-6.jpeg" alt="Carro da ItaSec em frente a uma residência atendida pela equipe" width="1000" height="750" loading="lazy"></figure>
+        <figure><img src="assets/galeria-7.jpeg" alt="Técnico e carro da ItaSec em atendimento em um galpão com tratores" width="1000" height="707" loading="lazy"></figure>
+      </div>
+      <p class="lead" style="margin-top:22px">Mais no Instagram: <a href="https://www.instagram.com/itaporanga_security" target="_blank" rel="noopener">@itaporanga_security</a></p>
+    </div>
+  </section>
+
+  <!-- 4. FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <h2>Perguntas frequentes</h2>
+      <div class="lista">
+        <details><summary>[Pergunta 1 — ex.: Como funciona o agendamento?]</summary><p>Entre em contato e nossa equipe vai agendar uma visita técnica.</p></details>
+        <details><summary>[Pergunta 2 — ex.: Quais cidades vocês atendem?]</summary><p>Atendemos em todas as cidades do nordeste.</p></details>
+        <details><summary>[Pergunta 3 — ex.: Quanto tempo leva o serviço?]</summary><p>O tempo de execução do serviço varia de acordo com o tamanho e o tipo de serviço, mas contamos com a equipe eficiente para realizar o mais rápido possível.</p></details>
+        <details><summary>[Pergunta 4 — ex.: Como é feito o orçamento?]</summary><p>Nosso orçamento sera feito após uma avaliação técnica do problema que nos é apresentado pelo cliente, sinta-se a vontade para entrar em contato e nos contar sobre sua solicitação.</p></details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FORMULÁRIO -->
+  <section class="contato" id="contato">
+    <div class="wrap">
+      <div>
+        <h2>Agende seu serviço</h2>
+        <p class="lead">Preencha o formulário e respondemos o mais rápido possível. Prefere conversar agora? Use o botão do WhatsApp.</p>
+      </div>
+      <form action="https://formsubmit.co/Itasecpb@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Novo contato pelo site ItaSec">
+        <input type="hidden" name="_captcha" value="true">
+        <!-- Depois do deploy, trocar por: <input type="hidden" name="_next" value="https://SEU-DOMINIO/obrigado.html"> -->
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Nome<input type="text" name="nome" required autocomplete="name"></label>
+        <label>WhatsApp<input type="tel" name="telefone" required autocomplete="tel" placeholder="(83) 90000-0000"></label>
+        <label>Cidade<input type="text" name="cidade" autocomplete="address-level2"></label>
+        <label>Serviço desejado
+          <select name="servico">
+            <option>Cabeamento estruturado</option>
+            <option>Câmera de segurança</option>
+            <option>Alarme</option>
+            <option>Cerca elétrica</option>
+            <option>Motor de portão</option>
+            <option>Controle de acesso</option>
+            <option>Portaria</option>
+            <option>Monitoramento</option>
+            <option>Outro</option>
+          </select>
+        </label>
+        <label>Mensagem<textarea name="mensagem" placeholder="Conte o que você precisa"></textarea></label>
+        <label class="check"><input type="checkbox" name="lgpd" required> <span>Concordo em enviar meus dados para contato, conforme a <a href="#privacidade" onclick="document.getElementById('privacidade').showModal();return false;">política de privacidade</a>.</span></label>
+        <button class="btn btn-primario" type="submit">Enviar solicitação</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- 6. RODAPÉ -->
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#topo" aria-label="ItaSec - voltar ao topo" style="border:0">
+        <img src="assets/escudo.png" alt="" width="52" height="56">
+        <span class="marca">ITA<b>SEC</b></span>
+      </a>
+      <p>Rua Horacio gomes 81, centro 58780-000<br>Itaporanga, Paraíba, Brasil</p>
+    </div>
+    <div>
+      <h3>Horário</h3>
+      <p>Seg a sex, 09h às 18h<br>Sábado, 09h às 12h</p>
+    </div>
+    <div>
+      <h3>Contato</h3>
+      <p>
+        <a href="https://wa.me/5511948900813" target="_blank" rel="noopener">WhatsApp</a><br>
+        <a href="mailto:Itasecpb@gmail.com">Itasecpb@gmail.com</a><br>
+        <a href="https://www.instagram.com/itaporanga_security" target="_blank" rel="noopener">@itaporanga_security</a>
+      </p>
+    </div>
+    <!-- Opcional: mapa do Google (cole o iframe em "Compartilhar > Incorporar um mapa") -->
+    <p class="copy">© 2026 ItaSec. Todos os direitos reservados. <a href="#privacidade" onclick="document.getElementById('privacidade').showModal();return false;">Política de privacidade</a></p>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante (número: trocar em 3 lugares: aqui, no botão do topo e no rodapé) -->
+<a class="zap" href="https://wa.me/5511948900813?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20agendar%20um%20servi%C3%A7o." target="_blank" rel="noopener" aria-label="Falar com a ItaSec pelo WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<!-- Política de privacidade (LGPD) -->
+<dialog id="privacidade">
+  <h2>Política de privacidade</h2>
+  <p>A ItaSec coleta nome, telefone, cidade e mensagem apenas para responder à sua solicitação e agendar serviços.</p>
+  <p>Os dados não são vendidos nem compartilhados com terceiros para outros fins. Você pode pedir a exclusão dos seus dados a qualquer momento pelo e-mail Itasecpb@gmail.com.</p>
+  <button class="btn btn-primario" onclick="this.closest('dialog').close()">Fechar</button>
+</dialog>
+
+<script>
+document.getElementById('tema').addEventListener('click',function(){
+  var r=document.documentElement,t=r.dataset.theme==='dark'?'light':'dark';
+  r.dataset.theme=t;
+  try{localStorage.setItem('tema',t)}catch(e){}
+});
+</script>
+</body>
+</html>
